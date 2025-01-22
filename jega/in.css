@@ -1,0 +1,262 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body Styling */
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    line-height: 1.6;
+    color: #333;
+  }
+  
+  /* Container */
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+  
+  /* Header Styling */
+  header {
+    background-color: #2b3a42;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  header h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+  }
+  
+  nav ul li {
+    margin: 0 20px;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  nav ul li a:hover {
+    color: #f4a261;
+  }
+  
+  /* Hero Section */
+  .hero {
+    background: linear-gradient(135deg, #1d3557, #457b9d);
+    color: white;
+    padding: 80px 0;
+    text-align: center;
+  }
+  
+  .hero h2 {
+    font-size: 42px;
+    margin-bottom: 15px;
+  }
+  
+  .hero p {
+    font-size: 18px;
+    margin-bottom: 30px;
+  }
+  
+  .cta-btn {
+    background-color: #f4a261;
+    color: white;
+    padding: 12px 30px;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .cta-btn:hover {
+    background-color: #e76f51;
+  }
+  
+  /* About Section */
+  .about {
+    padding: 60px 0;
+    text-align: center;
+    background-color: #fff;
+  }
+  
+  .about h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  .about p {
+    font-size: 18px;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+    color: #555;
+  }
+  
+  /* Services Section */
+  .services {
+    background-color: #f4f4f4;
+    padding: 60px 0;
+  }
+  
+  .services h2 {
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .service-item {
+    text-align: center;
+    margin: 20px;
+  }
+  
+  .service-item h3 {
+    font-size: 24px;
+    color: #2b3a42;
+    margin-bottom: 15px;
+  }
+  
+  .service-item p {
+    font-size: 16px;
+    color: #555;
+  }
+  
+  /* Testimonials Section */
+  .testimonials {
+    background-color: #fff;
+    padding: 60px 0;
+  }
+  
+  .testimonials h2 {
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .testimonial {
+    max-width: 800px;
+    margin: 20px auto;
+    text-align: center;
+    font-size: 18px;
+    font-style: italic;
+  }
+  
+  .testimonial p {
+    margin-bottom: 10px;
+  }
+  
+  .testimonial strong {
+    display: block;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  
+  /* Contact Section */
+  .contact {
+    background-color: #f4f4f4;
+    padding: 60px 0;
+  }
+  
+  .contact h2 {
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .contact form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: grid;
+    gap: 15px;
+    background-color: #fff;
+    padding: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  }
+  
+  .contact label {
+    font-size: 16px;
+    color: #2b3a42;
+  }
+  
+  .contact input, .contact select {
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    transition: border-color 0.3s ease;
+  }
+  
+  .contact input:focus, .contact select:focus {
+    border-color: #457b9d;
+    outline: none;
+  }
+  
+  .contact button {
+    background-color: #2b3a42;
+    color: white;
+    padding: 15px;
+    border: none;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .contact button:hover {
+    background-color: #457b9d;
+  }
+  
+  /* Footer Styling */
+  footer {
+    background-color: #2b3a42;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 16px;
+  }
+  
+  footer p {
+    margin: 0;
+  }
+  
+  /* Media Queries for Responsiveness */
+  @media (max-width: 768px) {
+    .services .container {
+      text-align: center;
+    }
+  
+    .service-item {
+      margin-bottom: 30px;
+    }
+  
+    .testimonial {
+      font-size: 16px;
+    }
+  
+    .contact form {
+      padding: 20px;
+    }
+  
+    .cta-btn {
+      font-size: 16px;
+      padding: 10px 20px;
+    }
+  }
+  
